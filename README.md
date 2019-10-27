@@ -232,6 +232,10 @@ void loop() {
 }
 ```
 
+## Подключение моторов к драйверу и к arduino:
+
+![&#x41F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x43D;&#x438;&#x435; &#x43C;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x432;](.gitbook/assets/motors_connection_schema.jpg)
+
 ## Основные материалы:
 
 ![](.gitbook/assets/introduction-to-arduino-mega-5.png)
