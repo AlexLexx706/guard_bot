@@ -234,7 +234,7 @@ void loop() {
 
 ## Подключение моторов к драйверу и к arduino:
 
-![](.gitbook/assets/motors_connection_schema-2.jpg)
+![](.gitbook/assets/motors_connection_schema-3.jpg)
 
 ## Основные материалы:
 
