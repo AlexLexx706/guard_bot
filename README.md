@@ -298,5 +298,5 @@ void loop()
 
 ![](.gitbook/assets/l298n-h-bridge-motor-controller-annotated-768x626.jpg)
 
-## Репозиторий проекта этапа 1, [тут ](https://github.com/AlexLexx706/mega_car/blob/master/mega_nrf_nano.ino)
+## Репозиторий проекта этапа 1, тут 
 
