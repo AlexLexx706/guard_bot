@@ -26,3 +26,9 @@ description: >-
 
 ![](.gitbook/assets/maketnaya-sborka.jpg)
 
+### Принципиальная схема:
+
+ 
+
+![](.gitbook/assets/skhema.jpg)
+
