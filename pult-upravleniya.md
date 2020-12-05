@@ -22,5 +22,7 @@ description: >-
 
 ### Сборка на макетной плате:
 
+ 
 
+![](.gitbook/assets/maketnaya-sborka.jpg)
 
