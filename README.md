@@ -18,8 +18,6 @@ description: проект робота охранника на базе плат
 
 ![](.gitbook/assets/shema.jpg)
 
-
-
 * Оказалось что можно подключить приёмник ps2 к Arduino Mega 2560 без конвертора напряжений, с конвертором не пошло, возможно плохо распаял конвертеры уровней, текущая схема подключения следующая:
 
 ![](.gitbook/assets/cur_schema.jpg)
@@ -27,7 +25,8 @@ description: проект робота охранника на базе плат
 Есть тонкий момент, что бы джостик спарился с приёмником, ждостик нужно включить **до подачи питания на приёмник.**
 
 ### Сейчас работоспособность джостика можно проверить вот этим кодом:
-нужно установить библиотеку [PS2X_lib](https://github.com/madsci1016/Arduino-PS2X/tree/master/PS2X_lib)
+
+нужно установить библиотеку [PS2X\_lib](https://github.com/madsci1016/Arduino-PS2X/tree/master/PS2X_lib)
 
 ```text
 #include <PS2X_lib.h>  //for v1.6
@@ -65,43 +64,43 @@ byte type = 0;
 byte vibrate = 0;
 
 void setup(){
- 
+
   Serial.begin(57600);
-  
+
   delay(300);  //added delay to give wireless ps2 module some time to startup, before configuring it
-   
+
   //CHANGES for v1.6 HERE!!! **************PAY ATTENTION*************
-  
+
   //setup pins and settings: GamePad(clock, command, attention, data, Pressures?, Rumble?) check for error
   error = ps2x.config_gamepad(PS2_CLK, PS2_CMD, PS2_SEL, PS2_DAT, pressures, rumble);
-  
+
   if(error == 0){
     Serial.print("Found Controller, configured successful ");
     Serial.print("pressures = ");
-	if (pressures)
-	  Serial.println("true ");
-	else
-	  Serial.println("false");
-	Serial.print("rumble = ");
-	if (rumble)
-	  Serial.println("true)");
-	else
-	  Serial.println("false");
+    if (pressures)
+      Serial.println("true ");
+    else
+      Serial.println("false");
+    Serial.print("rumble = ");
+    if (rumble)
+      Serial.println("true)");
+    else
+      Serial.println("false");
     Serial.println("Try out all the buttons, X will vibrate the controller, faster as you press harder;");
     Serial.println("holding L1 or R1 will print out the analog stick values.");
     Serial.println("Note: Go to www.billporter.info for updates and to report bugs.");
   }  
   else if(error == 1)
     Serial.println("No controller found, check wiring, see readme.txt to enable debug. visit www.billporter.info for troubleshooting tips");
-   
+
   else if(error == 2)
     Serial.println("Controller found but not accepting commands. see readme.txt to enable debug. Visit www.billporter.info for troubleshooting tips");
 
   else if(error == 3)
     Serial.println("Controller refusing to enter Pressures mode, may not support it. ");
-  
+
 //  Serial.print(ps2x.Analog(1), HEX);
-  
+
   type = ps2x.readType(); 
   switch(type) {
     case 0:
@@ -113,7 +112,7 @@ void setup(){
     case 2:
       Serial.print("GuitarHero Controller found ");
       break;
-	case 3:
+    case 3:
       Serial.print("Wireless Sony DualShock Controller found ");
       break;
    }
@@ -127,10 +126,10 @@ void loop() {
    */  
   if(error == 1) //skip loop if no controller found
     return; 
-  
+
   if(type == 2){ //Guitar Hero Controller
     ps2x.read_gamepad();          //read controller 
-   
+
     if(ps2x.ButtonPressed(GREEN_FRET))
       Serial.println("Green Fret Pressed");
     if(ps2x.ButtonPressed(RED_FRET))
@@ -144,17 +143,17 @@ void loop() {
 
     if(ps2x.ButtonPressed(STAR_POWER))
       Serial.println("Star Power Command");
-    
+
     if(ps2x.Button(UP_STRUM))          //will be TRUE as long as button is pressed
       Serial.println("Up Strum");
     if(ps2x.Button(DOWN_STRUM))
       Serial.println("DOWN Strum");
- 
+
     if(ps2x.Button(PSB_START))         //will be TRUE as long as button is pressed
       Serial.println("Start is being held");
     if(ps2x.Button(PSB_SELECT))
       Serial.println("Select is being held");
-    
+
     if(ps2x.Button(ORANGE_FRET)) {     // print stick value IF TRUE
       Serial.print("Wammy Bar Position:");
       Serial.println(ps2x.Analog(WHAMMY_BAR), DEC); 
@@ -162,7 +161,7 @@ void loop() {
   }
   else { //DualShock Controller
     ps2x.read_gamepad(false, vibrate); //read controller and set large motor to spin at 'vibrate' speed
-    
+
     if(ps2x.Button(PSB_START))         //will be TRUE as long as button is pressed
       Serial.println("Start is being held");
     if(ps2x.Button(PSB_SELECT))
@@ -196,8 +195,8 @@ void loop() {
     Serial.print(" ry: "); Serial.print(pss_ry);
     Serial.print(" lx: "); Serial.print(pss_lx);
     Serial.print(" ly: "); Serial.println(pss_ly);
-    
-          
+
+
     if (ps2x.NewButtonState()) {        //will be TRUE if any button changes state (on to off, or off to on)
       if(ps2x.Button(PSB_L3))
         Serial.println("L3 pressed");
@@ -234,8 +233,6 @@ void loop() {
 ```
 
 ## Подключение моторов к драйверу и к arduino:
-
-
 
 ![](.gitbook/assets/motors_connection_schema-3.jpg)
 
@@ -289,7 +286,7 @@ void loop()
 }
 ```
 
-{% embed url="https://youtu.be/uTTiwQH9X5s" %}
+{% embed url="https://youtu.be/uTTiwQH9X5s" caption="" %}
 
 ## Теперь сделаем управление машиной через пульт, Андрей тебе слово...:
 
@@ -297,13 +294,9 @@ void loop()
 
 ![](.gitbook/assets/introduction-to-arduino-mega-5.png)
 
- 
-
 ![](.gitbook/assets/ps2_controller-2_zdnilnv0ci.jpg)
-
- 
 
 ![](.gitbook/assets/l298n-h-bridge-motor-controller-annotated-768x626.jpg)
 
- 
+## Репозиторий проекта этапа 1, тут 
 
