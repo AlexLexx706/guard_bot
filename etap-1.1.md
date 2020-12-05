@@ -8,7 +8,15 @@
 
 ![](.gitbook/assets/photo5359604562882834893.jpg)
 
-Так же за одно с новой связью захотелось попробовать [Optical Flow Sensor](https://www.aliexpress.com/item/32962579078.html?spm=a2g0o.productlist.0.0.36ac4648d5gasV&algo_pvid=22b915cc-87de-4e03-8d4e-5bf7914d1602&algo_expid=22b915cc-87de-4e03-8d4e-5bf7914d1602-1&btsid=0b8b036316072111822993532ea064&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_&sku_id=66535672863):  
+Так же за одно с новой связью захотелось попробовать [ADNS-3080](https://www.openimpulse.com/blog/wp-content/uploads/wpsc/downloadables/ADNS-3080.pdf):  
 
 ![](.gitbook/assets/photo5359604562882834892.jpg)
+
+Пример работы с данным сенсором был взят [тут](https://github.com/Lauszus/ADNS3080/blob/master/ADNS3080.ino)
+
+### Принципиальная схема устройства:
+
+
+
+Репозиторий с последней прошивкой [тут](https://github.com/AlexLexx706/guard_bot_firmware):
 
