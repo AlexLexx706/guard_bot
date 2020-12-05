@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Робот охранник.](README.md)
-* [Пульт управления](pult-upravleniya.md)
+* [Пульт управления машиной:](pult-upravleniya.md)
 
