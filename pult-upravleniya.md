@@ -45,5 +45,9 @@ description: >-
 
 Тукущая прошивка [тут](https://github.com/AlexLexx706/nano_pult)
 
+{% embed url="https://youtu.be/JT0LODtDG-Y?t=90" %}
+
+
+
 
 
