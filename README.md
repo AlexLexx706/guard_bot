@@ -2,7 +2,7 @@
 description: проект робота охранника на базе платформы arduino
 ---
 
-# Робот охранник.
+# Робот охранник 1.0
 
 ## Задачи этапа 1:
 
@@ -299,4 +299,6 @@ void loop()
 ![](.gitbook/assets/l298n-h-bridge-motor-controller-annotated-768x626.jpg)
 
 ## Репозиторий проекта этапа 1, [тут ](https://github.com/AlexLexx706/mega_car/blob/master/mega_nrf_nano.ino)
+
+
 
