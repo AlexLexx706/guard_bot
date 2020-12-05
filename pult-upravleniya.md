@@ -28,7 +28,7 @@ description: >-
 
 ### Принципиальная схема:
 
- 
+  
 
 ![](.gitbook/assets/skhema.jpg)
 
