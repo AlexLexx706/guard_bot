@@ -1,6 +1,6 @@
 # Этап 1.1
 
-После первых испытаний с пультом [китайского аналога PS2](https://aliexpress.ru/item/32857305986.html?spm=a2g0s.9042311.0.0.264d33edewPG74&_ga=2.150436022.1072583910.1607177262-750059769.1578514621&sku_id=65286515313):  
+* После первых испытаний с пультом [китайского аналога PS2](https://aliexpress.ru/item/32857305986.html?spm=a2g0s.9042311.0.0.264d33edewPG74&_ga=2.150436022.1072583910.1607177262-750059769.1578514621&sku_id=65286515313):  
 
 ![](.gitbook/assets/photo5359604562882834894.jpg)
 
@@ -8,13 +8,13 @@
 
 ![](.gitbook/assets/photo5359604562882834893.jpg)
 
-Так же за одно с новой связью захотелось попробовать [ADNS-3080](https://www.openimpulse.com/blog/wp-content/uploads/wpsc/downloadables/ADNS-3080.pdf):  
+* Так же за одно с новой связью захотелось попробовать [ADNS-3080](https://www.openimpulse.com/blog/wp-content/uploads/wpsc/downloadables/ADNS-3080.pdf):  
 
 ![](.gitbook/assets/photo5359604562882834892.jpg)
 
 Пример работы с данным сенсором был взят [тут](https://github.com/Lauszus/ADNS3080/blob/master/ADNS3080.ino)
 
-Для движения по прямой было принято решение использовать гироскоп L3GD20:  
+* Для движения по прямой было принято решение использовать гироскоп L3GD20:  
 
 ![](.gitbook/assets/giroskop.png)
 
