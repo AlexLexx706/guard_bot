@@ -18,7 +18,7 @@
 
 ![](.gitbook/assets/giroskop.png)
 
-Пример подключения и получения данных с данного устройства [тут](https://github.com/pololu/l3g-arduino) 
+Пример подключения и получения данных с данного устройства [тут](https://github.com/pololu/l3g-arduino), пример подключения датчика к arduin uno [тут](https://www.compel.ru/item-pdf/20dfd604e5bb0086f7847de4f2e71196/pn/adafruit~l3gd20h-triple-axis-gyro-breakout-board---l3gd20-l3g4200.pdf)
 
 ### Принципиальная схема устройства:
 
