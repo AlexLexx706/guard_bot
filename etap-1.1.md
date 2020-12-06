@@ -26,6 +26,10 @@
 
 ![](.gitbook/assets/skhema-mashiny.jpg)
 
+### Подключение одометрии:
+
+
+
 
 
 Репозиторий с последней прошивкой [тут](https://github.com/AlexLexx706/guard_bot_firmware):
