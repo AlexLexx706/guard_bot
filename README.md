@@ -292,8 +292,6 @@ void loop()
 
 {% embed url="https://youtu.be/uTTiwQH9X5s" caption="" %}
 
-## Теперь сделаем управление машиной через пульт, Андрей тебе слово...:
-
 ## Основные материалы:
 
 ![](.gitbook/assets/introduction-to-arduino-mega-5.png)
