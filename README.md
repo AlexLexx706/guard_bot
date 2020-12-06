@@ -12,6 +12,10 @@ description: проект робота охранника на базе плат
 4. Соединить все компоненты вместе, на базе [робо-платформы](https://ru.aliexpress.com/item/32621177415.html?spm=a2g0s.9042311.0.0.274233edJqk35b)
 5. Создать программу управления роботом с пульта
 
+Схема выводов arduino mega 2560:  
+
+![](.gitbook/assets/arduino-mega-pinout.png)
+
 ### Текущие трудности:
 
 * Arduino Mega 2560 работает на 5V логике, a [PS2](https://ru.aliexpress.com/item/32857305986.html?spm=a2g0s.9042311.0.0.274233edyBKrYJ) контроллер на 3.3V,   и т.к логика не совместима и при непосредственном подключении PS2 к Mega 2560 может что то сгореть. Нужно использовать конвертер уровней например [вот такой](https://learn.sparkfun.com/tutorials/retired---using-the-logic-level-converter) на 4 канала, как раз на сигналы: MOSI MISO CLK SS, по следующей схеме:    
