@@ -30,6 +30,39 @@
 
 
 
+Подключение Bluetoot содуля к PC linux: 
+
+ 
+
+![](.gitbook/assets/photo5366217442424107648.jpg)
+
+ 
+
+![](.gitbook/assets/photo5366217442424107649.jpg)
+
+ 
+
+![](.gitbook/assets/fc6a785hx7oyze8.jpg)
+
+* Могуль отказался подключаться через GUI ubuntu
+* подключил модуль через usb-uart, включил режим AT \(подал 3.3V на порт mode\), настроил boad-rate, pin, name: список комманда в конце статьи [тут](https://www.instructables.com/AT-command-mode-of-HC-05-Bluetooth-module/)
+* Нашол инструкцию как подключить BT через теримал [тут](https://askubuntu.com/questions/248817/how-to-i-connect-a-raw-serial-terminal-to-a-bluetooth-connection): 
+  * ```text
+    #interactive bluetooth control tool:
+
+    sudo bluetoothctl
+    power on
+    agent on
+    scan on    #show mac and dev-name
+    pair <MAC>
+
+    #
+    sudo killall rfcomm
+    sudo rfcomm connect /dev/rfcomm0 <MAC> 1 &
+    ```
+
+
+
 
 
 Репозиторий с последней прошивкой [тут](https://github.com/AlexLexx706/guard_bot_firmware):
