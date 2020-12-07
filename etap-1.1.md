@@ -60,6 +60,21 @@
     sudo killall rfcomm
     sudo rfcomm connect /dev/rfcomm0 <MAC> 1 &
     ```
+* BT подключил к uart2 в arduino mega 2560б питание с 3.3 v, не стал делать делитель напряжения для вхота RX на BT \(пока работает\), но точно нужно сделать иначе сгорит.
+* Скетч проверки работы через serial2:
+
+```text
+void setup() {
+  Serial2.begin(115200);
+  Serial2.println("Hello Serial 2");
+}
+static int i = 0;
+
+void loop() {
+  Serial2.print("i:");
+  Serial2.println(i++);
+}
+```
 
 
 
