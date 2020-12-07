@@ -28,6 +28,20 @@
 
 ### Подключение одометрии:
 
+ 
+
+![](.gitbook/assets/51fyceq8qnl._sl1000_.jpg)
+
+описание входов есть [тут](https://freedelivery.com.ua/arduino-100/datchiki-130/datchik-skorosti-vraschenija-taxometr-f249-fc-03-modul-arduino-avr-pic.html)
+
+Цифровые ноги подключил к портам 18 и 19, подсчёт тиков по прерыванию.
+
+Скетчь для подсчёта тиков:
+
+```text
+
+```
+
 
 
 ### Подключение Bluetooth модуля к PC linux для отладки: 
