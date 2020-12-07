@@ -56,7 +56,7 @@
     scan on    #show mac and dev-name
     pair <MAC>
 
-    #
+    # link bt to tty
     sudo killall rfcomm
     sudo rfcomm connect /dev/rfcomm0 <MAC> 1 &
     ```
