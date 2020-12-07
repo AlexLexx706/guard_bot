@@ -30,7 +30,7 @@
 
 
 
-Подключение Bluetoot содуля к PC linux: 
+### Подключение Bluetooth модуля к PC linux для отладки: 
 
  
 
