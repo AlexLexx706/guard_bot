@@ -169,6 +169,8 @@ void loop() {
 * период дискретизации скорости 10 Гц
 * диаметр колеса робота 0.065 м
 
+Первые тестовые данные [тут](https://github.com/AlexLexx706/guard_bot_firmware/tree/master/logs)
+
 
 
 Репозиторий с последней прошивкой [тут](https://github.com/AlexLexx706/guard_bot_firmware):
