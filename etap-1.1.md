@@ -20,6 +20,14 @@
 
 Схема подключения ADNS-3080 к конвертеру уровней для совместимости с atmega:
 
+конвертер уровней на [4 канала](https://www.addicore.com/Logic-Level-Converter-Bi-Directional-5V-to-3-3V-p/227.htm)
+
+CS pin = 2
+
+RST pin = 11
+
+ 
+
  
 
 ![](.gitbook/assets/photo5371008551457239113.jpg)
