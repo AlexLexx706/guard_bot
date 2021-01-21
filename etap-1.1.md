@@ -16,6 +16,8 @@
 
 Информация о подключении и некоторая математика [тут](https://ardupilot.org/copter/docs/common-mouse-based-optical-flow-sensor-adns3080.html)
 
+[Datasheet](http://www.kontest.ru/datasheet/AVAG0TECHN0L0GIES/ADNS-3080.pdf) 
+
 На страничке магаза, то же что то написано, [тут](https://aliexpress.ru/item/4000273493900.html?spm=a2g0o.productlist.0.0.4afb4648Zs6vRB&algo_pvid=cc40735a-eeab-40d8-819b-42b8907156dc&algo_expid=cc40735a-eeab-40d8-819b-42b8907156dc-17&btsid=0b8b036316075077829264991e999a&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_&sku_id=10000001112053354)
 
 Схема подключения ADNS-3080 к конвертеру уровней для совместимости с atmega:
