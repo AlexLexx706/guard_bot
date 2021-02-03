@@ -49,7 +49,21 @@ description: >-
 
 {% embed url="https://youtu.be/JT0LODtDG-Y?t=90" %}
 
+## Модель корпуса:
 
+сборка [тут](https://cad.onshape.com/documents/f32f16fee08bb404acc67ec5/w/15b2490949f70b6df45c59d8/e/5496feb189914ede1d187b72)
 
+## Результаты окончательной сборки пульта:
 
+ 
+
+![](.gitbook/assets/photo5249162270594937822.jpg)
+
+ 
+
+![](.gitbook/assets/photo5249162270594937823.jpg)
+
+ 
+
+![](.gitbook/assets/photo5249162270594937824.jpg)
 
